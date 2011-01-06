@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT type="Advanced Installer" CreateVersion="6.0.1" version="6.1" modules="freeware" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="ALLUSERS" Value="2"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="ARPPRODUCTICON" Value="controlPanelIcon_1.exe"/>
+    <ROW Property="BannerBitmap" Value="default_banner.bmp" Type="1"/>
+    <ROW Property="DialogBitmap" Value="default_dialog.bmp" Type="1"/>
+    <ROW Property="Manufacturer" Value="Prien" ValueLocId="*"/>
+    <ROW Property="ProductCode" Value="1033:{03AFD632-61BF-44E9-82BE-5F3C0B3A1E46} "/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="Aprien" ValueLocId="*"/>
+    <ROW Property="ProductVersion" Value="1.1.1"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{2B9C0B98-5F40-4B34-8601-2B67F7530CB8}"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="Aprien_DIR" Directory_Parent="ProgramMenuFolder" DefaultDir="Aprien"/>
+    <ROW Directory="DesktopFolder" Directory_Parent="TARGETDIR" DefaultDir="Deskto~1|DesktopFolder" IsPseudoRoot="1"/>
+    <ROW Directory="ProgramMenuFolder" Directory_Parent="TARGETDIR" DefaultDir="Progra~1|ProgramMenuFolder" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="cl_DIR" Directory_Parent="APPDIR" DefaultDir="cl"/>
+    <ROW Directory="com_DIR" Directory_Parent="APPDIR" DefaultDir="com"/>
+    <ROW Directory="datamover_DIR" Directory_Parent="heatonresearch_DIR" DefaultDir="datamo~1|datamover"/>
+    <ROW Directory="db_DIR" Directory_Parent="datamover_DIR" DefaultDir="db"/>
+    <ROW Directory="encuestas_DIR" Directory_Parent="prien_DIR" DefaultDir="encues~1|encuestas"/>
+    <ROW Directory="heatonresearch_DIR" Directory_Parent="com_DIR" DefaultDir="heaton~1|heatonresearch"/>
+    <ROW Directory="lib_DIR" Directory_Parent="APPDIR" DefaultDir="lib"/>
+    <ROW Directory="prien_DIR" Directory_Parent="cl_DIR" DefaultDir="prien"/>
+    <ROW Directory="rules_DIR" Directory_Parent="encuestas_DIR" DefaultDir="rules"/>
+    <ROW Directory="sql_DIR" Directory_Parent="encuestas_DIR" DefaultDir="sql"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="Access.class" ComponentId="{47D7D212-2DBC-4B03-BF83-9DB14373E9EC}" Directory_="db_DIR" Attributes="0" KeyPath="Access.class" FullKeyPath="APPDIR\com\heatonresearch\datamover\db"/>
+    <ROW Component="Aprien" ComponentId="{280FFEF8-D6AA-4BEE-961B-AAD0726391BA}" Directory_="Aprien_DIR" Attributes="0"/>
+    <ROW Component="DataMover.class" ComponentId="{814B0489-5D08-4705-8864-1F63C8900242}" Directory_="datamover_DIR" Attributes="0" KeyPath="DataMover.class" FullKeyPath="APPDIR\com\heatonresearch\datamover"/>
+    <ROW Component="NirCmd.chm" ComponentId="{15715EF4-5AD4-4DEE-8922-A204CDE72684}" Directory_="APPDIR" Attributes="0" KeyPath="NirCmd.chm" FullKeyPath="APPDIR\NirCmd.chm"/>
+    <ROW Component="acerca_de.jpg" ComponentId="{D1A28670-6F5F-4A98-809B-10EBCB6C4361}" Directory_="encuestas_DIR" Attributes="0" KeyPath="acerca_de.jpg" FullKeyPath="APPDIR\cl\prien\encuestas"/>
+    <ROW Component="acondicionamiento_termico.csv" ComponentId="{4E813792-0D52-4F4E-A1AA-F18909C34C58}" Directory_="rules_DIR" Attributes="0" KeyPath="acondicionamiento_termico.csv" FullKeyPath="APPDIR\cl\prien\encuestas\rules"/>
+    <ROW Component="aprien.rar" ComponentId="{D20BA268-9E66-4E7F-938E-585B32816057}" Directory_="APPDIR" Attributes="0" KeyPath="configuracion.properties" FullKeyPath="APPDIR"/>
+    <ROW Component="create.sql" ComponentId="{FFF3B3B5-0D51-4D42-B438-2BADF2F88B03}" Directory_="sql_DIR" Attributes="0" KeyPath="create.sql" FullKeyPath="APPDIR\cl\prien\encuestas\sql"/>
+    <ROW Component="database.bat" ComponentId="{BAB3F166-C373-4DBB-BDF7-189CFD6EBFE1}" Directory_="APPDIR" Attributes="0" KeyPath="database.bat" FullKeyPath="APPDIR\database.bat"/>
+    <ROW Component="jxl.jar" ComponentId="{A79470EF-F000-4542-88A2-8AA566B5CF9F}" Directory_="lib_DIR" Attributes="0" KeyPath="jxl.jar_1" FullKeyPath="APPDIR\lib"/>
+    <ROW Component="nircmd.exe" ComponentId="{BDC4441F-128E-4BF6-8F5D-EDE4CDA7A5D9}" Directory_="APPDIR" Attributes="0" KeyPath="nircmd.exe" FullKeyPath="APPDIR\nircmd.exe"/>
+    <ROW Component="nircmdc.exe" ComponentId="{F4883226-AEAA-4A92-A121-223EA48A95A9}" Directory_="APPDIR" Attributes="0" KeyPath="nircmdc.exe" FullKeyPath="APPDIR\nircmdc.exe"/>
+    <ROW Component="run.bat" ComponentId="{B12F256E-64F6-47D6-8452-216F7899B3CE}" Directory_="APPDIR" Attributes="0" KeyPath="run.bat" FullKeyPath="APPDIR\run.bat"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0" Components="aprien.rar jxl.jar NirCmd.chm nircmd.exe nircmdc.exe run.bat database.bat Aprien acerca_de.jpg acondicionamiento_termico.csv create.sql DataMover.class Access.class"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="Access.class" Component_="Access.class" FileName="Access~1.cla|Access.class" Attributes="0" SourcePath="build\classes\com\heatonresearch\datamover\db\Access.class" SelfReg="false" Sequence="67"/>
+    <ROW File="Analista.class" Component_="acerca_de.jpg" FileName="Anali~24.cla|Analista.class" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\Analista.class" SelfReg="false" Sequence="36"/>
+    <ROW File="Analista_1.class" Component_="acerca_de.jpg" FileName="Analis~1.cla|Analista$1.class" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\Analista$1.class" SelfReg="false" Sequence="13"/>
+    <ROW File="Analista_10.class" Component_="acerca_de.jpg" FileName="Analis~2.cla|Analista$10.class" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\Analista$10.class" SelfReg="false" Sequence="14"/>
+    <ROW File="Analista_11.class" Component_="acerca_de.jpg" FileName="Analis~3.cla|Analista$11.class" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\Analista$11.class" SelfReg="false" Sequence="15"/>
+    <ROW File="Analista_12.class" Component_="acerca_de.jpg" FileName="Analis~4.cla|Analista$12.class" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\Analista$12.class" SelfReg="false" Sequence="16"/>
+    <ROW File="Analista_13.class" Component_="acerca_de.jpg" FileName="Analis~5.cla|Analista$13.class" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\Analista$13.class" SelfReg="false" Sequence="17"/>
+    <ROW File="Analista_14.class" Component_="acerca_de.jpg" FileName="Analis~6.cla|Analista$14.class" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\Analista$14.class" SelfReg="false" Sequence="18"/>
+    <ROW File="Analista_15.class" Component_="acerca_de.jpg" FileName="Analis~7.cla|Analista$15.class" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\Analista$15.class" SelfReg="false" Sequence="19"/>
+    <ROW File="Analista_16.class" Component_="acerca_de.jpg" FileName="Analis~8.cla|Analista$16.class" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\Analista$16.class" SelfReg="false" Sequence="20"/>
+    <ROW File="Analista_17.class" Component_="acerca_de.jpg" FileName="Analis~9.cla|Analista$17.class" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\Analista$17.class" SelfReg="false" Sequence="21"/>
+    <ROW File="Analista_18.class" Component_="acerca_de.jpg" FileName="Anali~10.cla|Analista$18.class" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\Analista$18.class" SelfReg="false" Sequence="22"/>
+    <ROW File="Analista_19.class" Component_="acerca_de.jpg" FileName="Anali~11.cla|Analista$19.class" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\Analista$19.class" SelfReg="false" Sequence="23"/>
+    <ROW File="Analista_2.class" Component_="acerca_de.jpg" FileName="Anali~12.cla|Analista$2.class" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\Analista$2.class" SelfReg="false" Sequence="24"/>
+    <ROW File="Analista_20.class" Component_="acerca_de.jpg" FileName="Anali~13.cla|Analista$20.class" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\Analista$20.class" SelfReg="false" Sequence="25"/>
+    <ROW File="Analista_21.class" Component_="acerca_de.jpg" FileName="Anali~14.cla|Analista$21.class" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\Analista$21.class" SelfReg="false" Sequence="26"/>
+    <ROW File="Analista_22.class" Component_="acerca_de.jpg" FileName="Anali~15.cla|Analista$22.class" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\Analista$22.class" SelfReg="false" Sequence="27"/>
+    <ROW File="Analista_23.class" Component_="acerca_de.jpg" FileName="Anali~16.cla|Analista$23.class" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\Analista$23.class" SelfReg="false" Sequence="28"/>
+    <ROW File="Analista_3.class" Component_="acerca_de.jpg" FileName="Anali~17.cla|Analista$3.class" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\Analista$3.class" SelfReg="false" Sequence="29"/>
+    <ROW File="Analista_4.class" Component_="acerca_de.jpg" FileName="Anali~18.cla|Analista$4.class" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\Analista$4.class" SelfReg="false" Sequence="30"/>
+    <ROW File="Analista_5.class" Component_="acerca_de.jpg" FileName="Anali~19.cla|Analista$5.class" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\Analista$5.class" SelfReg="false" Sequence="31"/>
+    <ROW File="Analista_6.class" Component_="acerca_de.jpg" FileName="Anali~20.cla|Analista$6.class" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\Analista$6.class" SelfReg="false" Sequence="32"/>
+    <ROW File="Analista_7.class" Component_="acerca_de.jpg" FileName="Anali~21.cla|Analista$7.class" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\Analista$7.class" SelfReg="false" Sequence="33"/>
+    <ROW File="Analista_8.class" Component_="acerca_de.jpg" FileName="Anali~22.cla|Analista$8.class" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\Analista$8.class" SelfReg="false" Sequence="34"/>
+    <ROW File="Analista_9.class" Component_="acerca_de.jpg" FileName="Anali~23.cla|Analista$9.class" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\Analista$9.class" SelfReg="false" Sequence="35"/>
+    <ROW File="Conexion.class" Component_="acerca_de.jpg" FileName="Conexi~1.cla|Conexion.class" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\Conexion.class" SelfReg="false" Sequence="37"/>
+    <ROW File="Config.class" Component_="acerca_de.jpg" FileName="Config~3.cla|Config.class" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\Config.class" SelfReg="false" Sequence="40"/>
+    <ROW File="Config_1.class" Component_="acerca_de.jpg" FileName="Config~1.cla|Config$1.class" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\Config$1.class" SelfReg="false" Sequence="38"/>
+    <ROW File="Config_2.class" Component_="acerca_de.jpg" FileName="Config~2.cla|Config$2.class" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\Config$2.class" SelfReg="false" Sequence="39"/>
+    <ROW File="DataMover.class" Component_="DataMover.class" FileName="DataMo~1.cla|DataMover.class" Attributes="0" SourcePath="build\classes\com\heatonresearch\datamover\DataMover.class" SelfReg="false" Sequence="65"/>
+    <ROW File="DataMoverUtility.class" Component_="DataMover.class" FileName="DataMo~2.cla|DataMoverUtility.class" Attributes="0" SourcePath="build\classes\com\heatonresearch\datamover\DataMoverUtility.class" SelfReg="false" Sequence="66"/>
+    <ROW File="Database.class" Component_="Access.class" FileName="Databa~1.cla|Database.class" Attributes="0" SourcePath="build\classes\com\heatonresearch\datamover\db\Database.class" SelfReg="false" Sequence="68"/>
+    <ROW File="DatabaseException.class" Component_="Access.class" FileName="Databa~2.cla|DatabaseException.class" Attributes="0" SourcePath="build\classes\com\heatonresearch\datamover\db\DatabaseException.class" SelfReg="false" Sequence="69"/>
+    <ROW File="Error.class" Component_="acerca_de.jpg" FileName="Error~1.cla|Error.class" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\Error.class" SelfReg="false" Sequence="42"/>
+    <ROW File="Error_1.class" Component_="acerca_de.jpg" FileName="Error$~1.cla|Error$1.class" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\Error$1.class" SelfReg="false" Sequence="41"/>
+    <ROW File="Excel.class" Component_="acerca_de.jpg" FileName="Excel~1.cla|Excel.class" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\Excel.class" SelfReg="false" Sequence="43"/>
+    <ROW File="Field.class" Component_="acerca_de.jpg" FileName="Field~1.cla|Field.class" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\Field.class" SelfReg="false" Sequence="44"/>
+    <ROW File="Importar.class" Component_="acerca_de.jpg" FileName="Import~1.cla|Importar.class" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\Importar.class" SelfReg="false" Sequence="48"/>
+    <ROW File="MySQL.class" Component_="Access.class" FileName="MySQL~1.cla|MySQL.class" Attributes="0" SourcePath="build\classes\com\heatonresearch\datamover\db\MySQL.class" SelfReg="false" Sequence="70"/>
+    <ROW File="NirCmd.chm" Component_="NirCmd.chm" FileName="NirCmd.chm" Attributes="0" SourcePath="..\..\..\..\Archivos de programa\Prien\Aprien\NirCmd.chm" SelfReg="false" Sequence="8"/>
+    <ROW File="Rules.class" Component_="acerca_de.jpg" FileName="Rules~1.cla|Rules.class" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\Rules.class" SelfReg="false" Sequence="62"/>
+    <ROW File="acerca_de.jpg" Component_="acerca_de.jpg" FileName="acerca~1.jpg|acerca_de.jpg" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\acerca_de.jpg" SelfReg="false" Sequence="12"/>
+    <ROW File="acondicionamiento_termico.csv" Component_="acondicionamiento_termico.csv" FileName="acondi~1.csv|acondicionamiento_termico.csv" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\rules\acondicionamiento_termico.csv" SelfReg="false" Sequence="50"/>
+    <ROW File="aguacaliente_y_coccion.csv" Component_="acondicionamiento_termico.csv" FileName="aguaca~1.csv|aguacaliente_y_coccion.csv" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\rules\aguacaliente_y_coccion.csv" SelfReg="false" Sequence="51"/>
+    <ROW File="aparatos.csv" Component_="acondicionamiento_termico.csv" FileName="aparatos.csv" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\rules\aparatos.csv" SelfReg="false" Sequence="52"/>
+    <ROW File="clientes1.csv" Component_="acondicionamiento_termico.csv" FileName="client~1.csv|clientes1.csv" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\rules\clientes1.csv" SelfReg="false" Sequence="53"/>
+    <ROW File="clientes2.csv" Component_="acondicionamiento_termico.csv" FileName="client~2.csv|clientes2.csv" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\rules\clientes2.csv" SelfReg="false" Sequence="54"/>
+    <ROW File="clientes3.csv" Component_="acondicionamiento_termico.csv" FileName="client~3.csv|clientes3.csv" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\rules\clientes3.csv" SelfReg="false" Sequence="55"/>
+    <ROW File="configuracion.properties" Component_="aprien.rar" FileName="config~1.pro|configuracion.properties" Attributes="0" SourcePath="..\..\..\..\Archivos de programa\Prien\Aprien\configuracion.properties" SelfReg="false" Sequence="1"/>
+    <ROW File="create.sql" Component_="create.sql" FileName="create.sql" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\sql\create.sql" SelfReg="false" Sequence="63"/>
+    <ROW File="database.bat" Component_="database.bat" FileName="database.bat" Attributes="0" SourcePath="..\..\..\..\Archivos de programa\Prien\Aprien\database.bat" SelfReg="false" Sequence="2"/>
+    <ROW File="encuestas.jar" Component_="aprien.rar" FileName="encues~1.jar|encuestas.jar" Attributes="0" SourcePath="dist\encuestas.jar" SelfReg="false" Sequence="3"/>
+    <ROW File="fondo.jpg" Component_="acerca_de.jpg" FileName="fondo.jpg" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\fondo.jpg" SelfReg="false" Sequence="45"/>
+    <ROW File="icon.ico" Component_="acerca_de.jpg" FileName="icon.ico" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\icon.ico" SelfReg="false" Sequence="46"/>
+    <ROW File="icon.png" Component_="acerca_de.jpg" FileName="icon.png" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\icon.png" SelfReg="false" Sequence="47"/>
+    <ROW File="iluminaciondpto.csv" Component_="acondicionamiento_termico.csv" FileName="ilumin~1.csv|iluminaciondpto.csv" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\rules\iluminaciondpto.csv" SelfReg="false" Sequence="56"/>
+    <ROW File="informacion_general.csv" Component_="acondicionamiento_termico.csv" FileName="inform~1.csv|informacion_general.csv" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\rules\informacion_general.csv" SelfReg="false" Sequence="57"/>
+    <ROW File="informacion_general_dpto.csv" Component_="acondicionamiento_termico.csv" FileName="inform~2.csv|informacion_general_dpto.csv" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\rules\informacion_general_dpto.csv" SelfReg="false" Sequence="58"/>
+    <ROW File="jxl.jar" Component_="aprien.rar" FileName="jxl.jar" Attributes="0" SourcePath="src\jxl.jar" SelfReg="false" Sequence="4"/>
+    <ROW File="jxl.jar_1" Component_="jxl.jar" FileName="jxl.jar" Attributes="0" SourcePath="dist\lib\jxl.jar" SelfReg="false" Sequence="5"/>
+    <ROW File="logo.PNG" Component_="acerca_de.jpg" FileName="logo.PNG" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\logo.PNG" SelfReg="false" Sequence="49"/>
+    <ROW File="mysql_connector_java_5.1.5_bin.jar" Component_="jxl.jar" FileName="mysql-~1.jar|mysql-connector-java-5.1.5-bin.jar" Attributes="0" SourcePath="dist\lib\mysql-connector-java-5.1.5-bin.jar" SelfReg="false" Sequence="6"/>
+    <ROW File="mysql_connector_java_5.1.5_bin.jar_1" Component_="aprien.rar" FileName="mysql-~1.jar|mysql-connector-java-5.1.5-bin.jar" Attributes="0" SourcePath="src\mysql-connector-java-5.1.5-bin.jar" SelfReg="false" Sequence="7"/>
+    <ROW File="nircmd.exe" Component_="nircmd.exe" FileName="nircmd.exe" Attributes="0" SourcePath="..\..\..\..\Archivos de programa\Prien\Aprien\nircmd.exe" SelfReg="false" Sequence="9"/>
+    <ROW File="nircmdc.exe" Component_="nircmdc.exe" FileName="nircmdc.exe" Attributes="0" SourcePath="..\..\..\..\Archivos de programa\Prien\Aprien\nircmdc.exe" SelfReg="false" Sequence="10"/>
+    <ROW File="reglas.txt" Component_="acondicionamiento_termico.csv" FileName="reglas.txt" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\rules\reglas.txt" SelfReg="false" Sequence="59"/>
+    <ROW File="run.bat" Component_="run.bat" FileName="run.bat" Attributes="0" SourcePath="..\..\..\..\Archivos de programa\Prien\Aprien\run.bat" SelfReg="false" Sequence="11"/>
+    <ROW File="schema.sql" Component_="create.sql" FileName="schema.sql" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\sql\schema.sql" SelfReg="false" Sequence="64"/>
+    <ROW File="tablaresumen.csv" Component_="acondicionamiento_termico.csv" FileName="tablar~1.csv|tablaresumen.csv" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\rules\tablaresumen.csv" SelfReg="false" Sequence="60"/>
+    <ROW File="transcripciones_iniciales.xlsx" Component_="acondicionamiento_termico.csv" FileName="transc~1.xls|transcripciones-iniciales.xlsx" Attributes="0" SourcePath="build\classes\cl\prien\encuestas\rules\transcripciones-iniciales.xlsx" SelfReg="false" Sequence="61"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" InstallationType="4"/>
+    <ATTRIBUTE name="CurrentBuild" value="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;ui.ail&gt;"/>
+    <ROW Path="&lt;ui_en.ail&gt;"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="FolderDlg.aip" Path="&lt;FolderDlg.aip&gt;"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;StaticUIStrings.aip&gt;"/>
+    <ROW Fragment="UI.aip" Path="&lt;UI.aip&gt;"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="aicustact.dll" SourcePath="&lt;aicustact.dll&gt;"/>
+    <ROW Name="default_banner.bmp" SourcePath="&lt;default-banner.bmp&gt;"/>
+    <ROW Name="default_dialog.bmp" SourcePath="&lt;default-dialog.bmp&gt;"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">
+    <ATTRIBUTE name="FixedSizeBitmaps" value="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="3"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="2"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="3"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="Aprien_DIR" Component_="Aprien"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="controlPanelIcon_1.exe" SourcePath="src\cl\prien\encuestas\icon.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="740"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="Not Installed" Sequence="1545"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1300"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="740"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="Aprien" Directory_="Aprien_DIR" Name="Aprien" Component_="run.bat" Target="[#run.bat]" Hotkey="0" Icon_="controlPanelIcon_1.exe" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="Aprien_1" Directory_="DesktopFolder" Name="Aprien" Component_="run.bat" Target="[#run.bat]" Hotkey="0" Icon_="controlPanelIcon_1.exe" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="Configurar_base_de_datos" Directory_="Aprien_DIR" Name="Config~1|Configurar base de datos" Component_="database.bat" Target="[#database.bat]" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMax="[|ProductVersion]" Attributes="1025" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+</DOCUMENT>

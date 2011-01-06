@@ -1,0 +1,336 @@
+En aparatos
+
+Si refrigerador=0
+	tipo_refrigerador=N/A
+	antiguedad=N/A
+
+Si lavadora=0
+	tipo_lavadora=N/A
+	cargas=N/A
+
+Si secadora=0
+	QEU=N/A
+	cargas_secadora=N/A
+
+Si televisor=0
+	teles=N/A
+
+-----------------------------------------------------------------------------------------------
+En IluminacionDpto
+
+Si UsoAmpolletasEficientes=0
+	CtasAmpolletas=N/A
+
+Si UsaFluorescente= -1
+	enCocina=N/A
+	enBaño=N/A
+	otro=N/A
+	Cualotro=N/A
+
+---------------------------------------------------------------------------------------------
+En AguaCaliente_y_coccion
+
+Si sistema=1 ó sistema=2 ó sistema=3
+	InfoComp_ACS=N/A
+	Alicuota=N/A
+	FCF_0=N/A
+	FCF_1=N/A
+	FCF_ACS=N/A
+	ns_0=N/A
+	tipo_medidor=N/A
+	mes=N/A
+	ConsumoACS_dpto_m3=N/A
+	ConsumoACS_dpto_pesos=N/A
+	ConsumoACS_edificio_m3=N/A
+	ConsumoACS_edificio_pesos=N/A
+	GF_prorrateo=N/A
+
+Si InfoComp_ACS=0
+	Alicuota=N/A
+	FCF_0=N/A
+	FCF_1=N/A
+	FCF_ACS=N/A
+	ns_0=N/A
+	ConsumoACS_dpto_m3=N/A
+	ConsumoACS_edificio_m3=N/A
+	ConsumoACS_edificion_pesos=N/A
+	
+Si sistema=0
+	piloto=N/A
+	loApaga=N/A
+
+Si piloto=0
+	loApaga=N/A
+
+Si sistema=3
+	piloto=N/A
+	loApaga=N/A
+	ECA=2
+
+Si optAC_0=0
+	habs_0=N/A
+	habs_1=N/A
+	habs_2=N/A
+	habs_3=N/A
+	habs_4=N/A
+	daprox_0=N/A
+	daprox_1=N/A
+	daprox_2=N/A
+	daprox_3=N/A
+	daprox_4=N/A
+	nsnc_0=N/A
+	nsnc_1=N/A
+	nsnc_2=N/A
+	nsnc_3=N/A
+	nsnc_4=N/A
+
+Si optAC_2=0
+	lavadora=N/A
+	ciclo=N/A
+
+Si lavadora=1
+	ciclo=N/A
+
+Si optAC_1=0
+	aireador=N/A
+
+-------------------------------------------------------------------
+En Acondicionamiento_termico
+
+Si calor=0
+	calor_todo_0=N/A
+	calor_todo_1=N/A
+	habit_0=N/A
+	habit_1=N/A
+	habit_2=N/A
+	habit_otro_calor=N/A
+	usan_habit_calor=N/A
+	XqCalor=N/A
+	XqCalor_otro=N/A
+
+Si frio=0
+	frio_todo_0=N/A
+	frio_todo_1=N/A
+	habit_3=N/A
+	habit_4=N/A
+	habit_5=N/A
+	habit_otro_frio=N/A
+	usan_habit_frio=N/A
+	XqFrio=N/A
+	XqFrio_otro=N/A
+
+Si aire_acondicionado=0
+	sistema_aire=N/A
+	Ctos_meses=N/A
+	Dormitorio=N/A
+	Living=N/A
+	Sala_estar=N/A
+	Cocina=N/A
+	Otro=N/A
+	Ctos=N/A
+
+Si Calefacciona_todo= -1
+	Dormitorio_ppal=N/A
+	Otro_dormitorio=N/A
+	Living_comedor=N/A
+	Sala_de_estar=N/A
+	Cocina_=N/A
+	Otro_=N/A
+	Cual_otro=N/A
+	
+Si Central_termica=0
+	EUCT=N/A
+	Loza_CT=N/A
+	Radiadores_CT=N/A
+	Techo_suelo_CT=N/A
+	Ctos_radiadores_CT=N/A
+	Termostatos_CT=N/A
+	Ctos_termostatos_CT=N/A
+	InfoComp_AT=N/A
+	alicuota_AT=N/A
+	fondo=N/A
+	FCF_AT_0=N/A
+	FCF_AT_1=N/A
+	FCF_CTE_AT=N/A
+	ns_AT_0=N/A
+	tipo_medidor_AT=N/A
+	meses_AT=N/A
+	C1=N/A
+	C2=N/A
+	C3=N/A
+	C4=N/A
+	GF_prorrateo=N/A
+
+Si InfoComp_AT=0
+	fondo=N/A
+	FCF_AT_0=N/A
+	FCF_AT_1=N/A
+	FCF_CTE_AT=N/A
+	ns_AT_0=N/A
+	tipo_medidor_AT=N/A
+	C1=N/A
+	C3=N/A
+	C4=N/A
+
+Si Calderas_murales=0
+	EUCC=N/A
+	Loza_CC=N/A
+	Radiadores_CC=N/A
+	Techo_suelo_CC=N/A
+	Ctos_radiadores_CC=N/A
+	Termostato_CC=N/A
+	Ctos_termostatos_CC=N/A
+
+Si estufas_selected=0
+	estufas_GL=N/A
+	estufas_GL_0=N/A
+	estufas_GL_0_cantidad=N/A
+	tamaño_GL_0=N/A
+	estufas_GL_1=N/A
+	estufas_GL_1_cantidad=N/A
+	tamaño_GL_1=N/A
+	estufas_GL_2=N/A
+	estufas_GL_2_cantidad=N/A
+	termostato_GL_2=N/A
+	estufas_GL_3=N/A
+	estufas_GL_3_cantidad=N/A
+	termostato_GL_3=N/A
+	estufas_kerosene=N/A
+	estufas_kerosene_0=N/A
+	estufas_kerosene_0_cantidad=N/A
+	estufas_kerosene_1=N/A
+	estufas_kerosene_1_cantidad=N/A
+	estufas_GN=N/A
+	estufas_GN_0=N/A
+	estufas_GN_0_cantidad=N/A
+	estufas_GN_1=N/A
+	estufas_GN_1_cantidad=N/A
+	termostato_GN_1=N/A
+	estufas_GN_2=N/A
+	estufas_GN_2_cantidad=N/A
+	estufas_GN_3=N/A
+	estufas_GN_3_cantidad=N/A
+	estufas_electricas=N/A
+	estufas_electricas_0=N/A
+	estufas_electricas_0_cantidad=N/A
+	termostato_electricas_0=N/A
+	estufas_electricas_1=N/A
+	estufas_electricas_1_cantidad=N/A
+	termostato_electricas_1=N/A
+	estufas_electricas_2=N/A
+	estufas_electricas_2_cantidad=N/A
+	termostato_electricas_2=N/A
+
+Si sup01_R1 = 0
+	%sup_R1= N/A
+
+Si inf01_R1 = 0
+	%inf_R1= N/A
+
+Si Der01_R1 = 0
+	%Der_R1= N/A
+
+Si Izq01_R1 = 0
+	%Izq_R1= N/A
+
+Si R2=0
+	recinto_R2=N/A
+	sup00_R2=N/A
+	sup01_R2=N/A
+	%sup_R2=N/A
+	Inf00_R2=N/A
+	Inf01_R2=N/A
+	%Inf_R2=N/A
+	Der00_R2=N/A
+	Der01_R2=N/A
+	%Der_R2=N/A
+	Izq00_R2=N/A
+	Izq01_R2=N/A
+	%Izq_R2=N/A
+	largo_R2=N/A
+	Ancho_R2=N/A
+	P1de_R2=N/A
+	P1a_R2=N/A
+	P2de_R2=N/A
+	P2a_R2=N/A
+	tipo_estufa_R2=N/A
+	tipo_estufa_selected_R2=N/A
+	CC_R2=N/A
+	CC_selected_R2=N/A
+	n_radiadores_R2=N/A
+	vidrios_R2=N/A
+	marcos_R2=N/A
+
+Si sup01_R2 = 0
+	%sup_R2= N/A
+
+Si inf01_R2 = 0
+	%inf_R2= N/A
+
+Si Der01_R2 = 0
+	%Der_R2= N/A
+
+Si Izq01_R2 = 0
+	%Izq_R2= N/A
+	
+Si R3=0
+	recinto_R3=N/A
+	sup00_R3=N/A
+	sup01_R3=N/A
+	%sup_R3=N/A
+	Inf00_R3=N/A
+	Inf01_R3=N/A
+	%Inf_R3=N/A
+	Der00_R3=N/A
+	Der01_R3=N/A
+	%Der_R3=N/A
+	Izq00_R3=N/A
+	Izq01_R3=N/A
+	%Izq_R3=N/A
+	largo_R3=N/A
+	Ancho_R3=N/A
+	P1de_R3=N/A
+	P1a_R3=N/A
+	P2de_R3=N/A
+	P2a_R3=N/A
+	tipo_estufa_R3=N/A
+	tipo_estufa_selected_R3=N/A
+	CC_R3=N/A
+	CC_selected_R3=N/A
+	n_radiadores_R3=N/A
+	vidrios_R3=N/A
+	marcos_R3=N/A
+
+Si sup01_R3 = 0
+	%sup_R3= N/A
+
+Si inf01_R3 = 0
+	%inf_R3= N/A
+
+Si Der01_R3 = 0
+	%Der_R3= N/A
+
+Si Izq01_R3 = 0
+	%Izq_R3= N/A
+
+Si cierre_ventanas=0
+	P1ventanas_de=N/A
+	P1ventanas_a=N/A
+	P2ventanas_de=N/A
+	P2ventanas_a=N/A	
+	
+Si cortinas_velos=3
+	cierre_cortinas=N/A
+	P1cortinas_de=N/A
+	P1cortinas_a=N/A
+	P2cortinas_de=N/A
+	P2cortinas_a=N/A
+
+Si cierre_cortinas=0
+	P1cortinas_de=N/A
+	P1cortinas_a=N/A
+	P2cortinas_de=N/A
+	P2cortinas_a=N/A
+
+Si sombras=0
+	cantidad_sombras=N/A
